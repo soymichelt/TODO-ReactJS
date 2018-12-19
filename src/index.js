@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import Task from './containers/tasks-container'
 import * as serviceWorker from './serviceWorker';
 

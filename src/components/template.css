@@ -2,6 +2,8 @@ body {
     background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
     min-height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .wrapper {
     width: 100%;
@@ -12,4 +14,11 @@ body {
     grid-gap: 10px;
     justify-content: center;
     align-content: center;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media only screen and (max-width: 768px) {
+    .template {
+        grid-template-columns: 90%;
+    }
 }

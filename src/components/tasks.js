@@ -14,10 +14,20 @@ import CompletedTaskIcon from '@material-ui/icons/DoneAll'
 import NotCompletedTaskIcon from '@material-ui/icons/Assignment'
 import blue from '@material-ui/core/colors/blue'
 import blueGrey from '@material-ui/core/colors/blueGrey'
+import Tooltip from '@material-ui/core/Tooltip'
+
+import Search from './../components/search'
 
 const Tasks = (props) => {
   
-    const { tasks, onRemoveItemClick, onCompletedItemClick, classes } = props;
+    const {
+        tasks,
+        onRemoveItemClick,
+        onCompletedItemClick,
+        classes,
+        searchValue,
+        onSearchChange
+    } = props;
     
     return (
         <div className="task-list">
@@ -25,6 +35,10 @@ const Tasks = (props) => {
                 className={classes.paperTasks}
                 elevation={3}
             >
+                <Search
+                    searchValue={searchValue}
+                    onSearchChange={onSearchChange}
+                />
                 <List
                     subheader={<ListSubheader component="div">Tasks List</ListSubheader>}
                     className={classes.root}
@@ -50,7 +64,9 @@ const Tasks = (props) => {
                                 >
                                     {
                                         item.completed === true ? (
-                                            <CompletedTaskIcon />
+                                            <Tooltip title="Completed Task">
+                                                <CompletedTaskIcon />
+                                            </Tooltip>
                                         )
                                         : (
                                             <NotCompletedTaskIcon />
@@ -66,20 +82,24 @@ const Tasks = (props) => {
                                 <ListItemSecondaryAction>
                                     {
                                         !item.completed && (
-                                            <IconButton
-                                                onClick={(e) => onCompletedItemClick(index)}
-                                                aria-label="Completed"
-                                            >
-                                                <CheckIcon />
-                                            </IconButton>
+                                            <Tooltip title="To complete">
+                                                <IconButton
+                                                    onClick={(e) => onCompletedItemClick(index)}
+                                                    aria-label="Completed"
+                                                >
+                                                    <CheckIcon />
+                                                </IconButton>
+                                            </Tooltip>
                                         )
                                     }
-                                    <IconButton
-                                        onClick={(e) => onRemoveItemClick(index)}
-                                        aria-label="Delete"
-                                    >
-                                        <DeleteIcon />
-                                    </IconButton>
+                                    <Tooltip title="Delete">
+                                        <IconButton
+                                            onClick={(e) => onRemoveItemClick(index)}
+                                            aria-label="Delete"
+                                        >
+                                            <DeleteIcon />
+                                        </IconButton>
+                                    </Tooltip>
                                 </ListItemSecondaryAction>
                             </ListItem>
                         )
