@@ -1,0 +1,9 @@
+.task-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.task-list .task-item {
+    height: 150px;
+    
+}
