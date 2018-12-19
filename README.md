@@ -1,4 +1,8 @@
-## Available Scripts
+## Scripts habilitados
+
+Para comenzar debe instalar los paquetes NPM. Ejecute el comando:
+
+### `npm install`
 
 En el directorio del proyecto, puede ejecutar:
 
