@@ -1,20 +1,17 @@
-## Scripts habilitados
+# TODO ReactJS
+Aplicación TODO con la herramienta ReactJS, para participar en el concurso de programación frontend (Reto #3) [Platzi Grinch](https://platzi.com/blog/grinch/).
 
-Para comenzar debe instalar los paquetes NPM. Ejecute el comando:
+# Tecnología
+Esta aplicación está desarrollada con las siguientes tecnologías:
+* ReactJS
+* Zeit Now
+* Material - UI
 
-### `npm install`
+# Pantallas de la aplicación
+| | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="1604" alt="Tarea agregada" src="https://raw.githubusercontent.com/soymichelt/TODO-ReactJS/master/screenshots/added-task.jpg" />  |  <img width="1604" alt="Completar tarea" src="https://raw.githubusercontent.com/soymichelt/SSIF/master/screenshots/complete.jpg" />  |  <img width="1604" alt="Tarea completada" src="https://raw.githubusercontent.com/soymichelt/SSIF/master/screenshots/completed.jpg" />|
+|<img width="1604" alt="Eliminar tarea" src="https://raw.githubusercontent.com/soymichelt/SSIF/master/screenshots/delete.jpg" />  |  <img width="1604" alt="Buscar tarea" src="https://raw.githubusercontent.com/soymichelt/SSIF/master/screenshots/search.jpg" />  |  |
 
-En el directorio del proyecto, puede ejecutar:
-
-### `npm start`
-
-Ejecuta la aplicación en el modo de desarrollo.<br>
-Abre [http://localhost:3000](http://localhost:3000) para verlo en el navegador.
-
-La página se volverá a cargar si haces ediciones.<br>
-También verá los errores de pelusa en la consola.
-
-### `npm run build`
-
-Crea la aplicación para producción en la carpeta `build`.<br>
-Combina correctamente React en modo de producción y optimiza la construcción para el mejor rendimiento.
+# Desarrollador
+[<img width="128" alt="Ing. Michel Roberto Traña Tablada" src="https://raw.githubusercontent.com/soymichelt/cv-cdn/master/images/perfil.png" />](http://soymichel.com)
